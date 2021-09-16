@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--Mayoria de recursos directos de HTML -->
+<html>
+    <head>
+        <title>Web con Todos los recursos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos_recursos.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="cabeza">
+                <h1>Recursos directos de HTML</h1>
+                <label> Campo para ingreso de texto plano:</label>
+                <input id="text" type="text" name="nombre"/>
+                <hr/><br/>               
+                Contraseña: <input type="password" name="contrasena"/>
+                <br><hr/>
+                <label> Genero: </label>
+                <input type="radio" name="sexo" value="1"/> Hombre
+                <input type="radio" name="sexo" value="2"/> Mujer
+                <br><hr/>
+                <label> Vehiculo: </label>
+                <input type="checkbox" name="moto"/>Moto
+                <input type="checkbox" name="carro"/>Carro
+                <br/>
+                <input type="submit">
+                <input type="reset">
+                <hr/>
+                <input id="color" type="color" />
+                <hr/>
+                <label for="vehi"> Vehiculo:</label>
+                <select id="vehi">
+                    <option value="1">Moto</option>
+                    <option value="2">Carro</option>
+                    <option value="3">Avion</option>
+                </select>
+                <hr/><br>
+                <label for="numero">Numero: </label>
+                <input id="numero" type="number" min="0" max="20" />
+                <hr/><br/>
+                <label for="fecha">Fecha</label>
+                <input id="fecha" type="date" min="2021-01-01" max="2021-12-31" />
+                <hr/><br/>
+                <input type="file">
+                <hr/><br/>
+                <label for="area">Text Area</label><br/>
+                <textarea id="area" ></textarea>
+            </div>
+            <div class="recursos-web">
+                <h1>Recursos directos de HTML para MULTIMEDIA Local</h1>
+                <hr>
+                <label> Imagen local: </label>
+                <br>
+                <img src="images/halo01.jpg" alt="alt" width="200" height="200"/>
+                <img src="images/halo02.jpg" alt="alt" width="200" height="200"/>               
+                <img src="images/halo03.jpg" alt="alt" width="200" height="200"/>
+                <br><hr>
+                <label>Video desde fuente local</label>
+                <video width="500" controls>
+                    <source src="videos/video01.mp4">
+                </video>
+            </div>
+            <div class="recursos-multimedia">
+                <h1>Recursos MULTIMEDIA desde otro servidor</h1>
+                <hr>
+                <label>Imagen desde servidor Cloudinary</label>
+                <br>
+                <img src="https://res.cloudinary.com/jonathancloud/image/upload/v1631829136/media%20demo/cloud02_sst1lu.jpg" alt="alt" width="200" height="200"/>
+                <img src="https://res.cloudinary.com/jonathancloud/image/upload/v1631829091/media%20demo/cloud01_u1utxh.jpg" width="200" height="200" alt="alt"/>
+                <br><hr>
+                <label>Video desde servidor Cloudinary</label>
+                <br>
+                <video width="500" controls>
+                    <source src="https://res.cloudinary.com/jonathancloud/video/upload/v1631829460/media%20demo/video-cloud-01_waxtkv.mp4">
+                </video>
+                <br><hr>
+                <label>Audio desde servidor Cloudinary</label>
+                <br>
+                <audio controls>
+                    <source src="https://res.cloudinary.com/jonathancloud/video/upload/v1631830220/media%20demo/opening-8043_v8trbu.wav">
+                </audio>
+            </div>
+        </div>
+    </body>
+</html>
